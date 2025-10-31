@@ -1,0 +1,24 @@
+[
+  {
+    "id": 10,
+    "type": "evenement",
+    "title": "La Nuit des Molières (Projection)",
+    "description": "Projection en direct de la cérémonie des Molières sur grand écran, avec ambiance théâtre.",
+    "date": "Vendredi 15 novembre",
+    "time": "20h00",
+    "location": "Salle Principale, Entrée par le hall B",
+    "ticketsLink": "Entrée Gratuite",
+    "imageUrl": "/images/event-theatre.jpg"
+  },
+  {
+    "id": 11,
+    "type": "evenement",
+    "title": "Ciné-Club : Le Voyage dans la Lune",
+    "description": "Projection du classique de Georges Méliès (1902), suivie d'une discussion sur les débuts du cinéma.",
+    "date": "Samedi 23 novembre",
+    "time": "19h30",
+    "location": "Salle de Projection, Niveau -1",
+    "ticketsLink": "https://lien-billetterie-factice.com",
+    "imageUrl": "/images/event-film.jpg"
+  }
+]
