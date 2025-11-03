@@ -2,9 +2,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// Les composants de layout sont dans 'components/layout'
 import Header from './components/layout/Header.jsx';
 import Footer from './components/layout/Footer.jsx';
-import Home from './components/pages/Home.jsx';
+
+// Correction : Les pages sont dans './components/pages/'
+import Home from './components/pages/Home.jsx'; 
 import Ateliers from './components/pages/Ateliers.jsx';
 import Evenements from './components/pages/Evenements.jsx';
 import Soutenir from './components/pages/Soutenir.jsx';
