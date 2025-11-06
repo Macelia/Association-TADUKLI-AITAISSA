@@ -71,12 +71,16 @@ Build **Association-TADUKLI-AITAISSA** from the source and install dependencies.
    git clone https://github.com/Macelia/Association-TADUKLI-AITAISSA
    cd Association-TADUKLI-AITAISSA
 2. **Navigate to the project directory:**
+ ```bash
    cd Association-TADUKLI-AITAISSA
 3. **Install dependencies:**
+```bash
    npm install
 4. **Run the development server:**
+```bash
    npm run dev
 5. **Build for production:**
+```bash
    npm run build
 
 ## ▶️ Usage
