@@ -66,7 +66,7 @@ This project requires the following dependencies:
 
 Build **Association-TADUKLI-AITAISSA** from the source and install dependencies.
 
-bash
+'''bash
    git clone https://github.com/Macelia/Association-TADUKLI-AITAISSA
    cd Association-TADUKLI-AITAISSA
 2. **Navigate to the project directory:**
