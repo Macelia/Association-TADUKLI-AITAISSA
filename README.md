@@ -70,3 +70,48 @@ Build **Association-TADUKLI-AITAISSA** from the source and install dependencies.
    ```bash
    git clone https://github.com/Macelia/Association-TADUKLI-AITAISSA
    cd Association-TADUKLI-AITAISSA
+2. Navigate to the project directory:
+   cd Association-TADUKLI-AITAISSA
+3. Install dependencies:
+   npm install
+4. Run the development server:
+   npm run dev
+5. Build for production:
+   npm run build
+
+## ▶️ Usage
+
+1. Once the server is running, open your browser and visit:
+   http://localhost:5173 (You can now explore and modify the components in the /src directory)
+   
+## 🧪 Testing
+
+1. Run automated tests to ensure code quality and stability:
+   npm test (Monitoring and testing tools are integrated to track performance and maintain reliability)
+
+Association-TADUKLI-AITAISSA/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── App.jsx
+│
+├── public/
+│
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
+
+👨‍💻 Author
+
+Macelia
+Developed with passion for cultural innovation and community engagement.
+
+📜 License
+
+This project is licensed under the MIT License — feel free to use, modify, and distribute it.
+
+
+   
