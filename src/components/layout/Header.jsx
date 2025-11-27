@@ -8,9 +8,17 @@ const Header = () => {
       <nav className="flex justify-between items-center max-w-6xl mx-auto">
         
         {/* Logo/Nom de l'Association */}
-        <Link to="/" className="text-2xl font-bold hover:text-yellow-300 transition duration-300">
-          Association "Tadukli" Ait Aissa-Aokas
-        </Link>
+        <Link
+  to="/"
+  className="text-2xl font-bold hover:text-yellow-300 transition duration-300"
+>
+  <span className="block">ⴰⵙⵓⵏⵏⴰⵙ ⴰⵝⴰⴷⵓⴽⵍⵉ ⴰⵢⵜ ⵄⵉⵙⵙⴰ–ⴰⵡⴽⴰⵙ </span>
+  <span className="block text-xl opacity-90">
+    Association "Tadukli" Ait Aissa-Aokas
+  </span>
+</Link>
+
+      
         
         {/* Liens de Navigation */}
         <div className="space-x-4">

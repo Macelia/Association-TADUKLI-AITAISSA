@@ -6,9 +6,14 @@ import CTA from '../shared/CTA.jsx';
 const Home = () => {
   return (
     <div className="text-center p-10 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-blue-800 mb-4">
-        Bienvenue à notre Association Culturelle !
+      <h1 className="text-4xl font-extrabold text-blue-800 mb-4
+             transition-transform duration-200 ease-out
+             hover:scale-105 hover:-rotate-1">
+        Ansuf yis-wen ɣer Tdukli n AT 3issa 
       </h1>
+      <h2 className="mt-4 text-lg sm:text-xl font-medium text-slate-700 dark:text-slate-300">
+        Bienvenue à notre Association Culturelle !
+      </h2>
       <p className="text-xl text-gray-600 mb-8">
         Promouvoir la lecture, le dessin, la musique et les jeux stratégiques pour tous.
       </p>
@@ -26,6 +31,15 @@ const Home = () => {
           isExternal={false} // Lien interne vers la page /soutenir
         />
       </div>
+
+      {/*evenements à venir */}
+      {/* Bandeau d'information animé */}
+<div className="overflow-hidden mt-6">
+  <p className="whitespace-nowrap text-lg font-semibold text-red-600
+                animate-marquee">
+    🎭 Aucun spectacle prévu pour le moment — nous vous tiendrons informés très bientôt !
+  </p>
+</div>
       
     </div>
   );

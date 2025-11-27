@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Les composants de layout sont dans 'components/layout'
 import Header from './components/layout/Header.jsx';
@@ -15,7 +15,7 @@ import Contact from './components/pages/Contact.jsx';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow pt-8 bg-gray-50">
@@ -29,7 +29,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
