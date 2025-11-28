@@ -13,6 +13,9 @@ import Evenements from './components/pages/Evenements.jsx';
 import Soutenir from './components/pages/Soutenir.jsx';
 import Contact from './components/pages/Contact.jsx';
 
+import MentionsLegales from "./components/pages/MentionsLegales";
+import PolitiqueConfidentialite from "./components/pages/PolitiqueConfidentialite";
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +28,10 @@ function App() {
             <Route path="/evenements" element={<Evenements />} />
             <Route path="/soutenir" element={<Soutenir />} />
             <Route path="/contact" element={<Contact />} />
+
+            {/* ⭐ Ajoute-les ici */}
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           </Routes>
         </main>
         <Footer />

@@ -12,7 +12,7 @@ const Header = () => {
   to="/"
   className="text-2xl font-bold hover:text-yellow-300 transition duration-300"
 >
-  <span className="block">ⴰⵙⵓⵏⵏⴰⵙ ⴰⵝⴰⴷⵓⴽⵍⵉ ⴰⵢⵜ ⵄⵉⵙⵙⴰ–ⴰⵡⴽⴰⵙ </span>
+  <span className="block">ⵜⴰⴷⵓⴽⵍⵉ ⴰⵜ ⵄⵉⵙⵙⴰ </span>
   <span className="block text-xl opacity-90">
     Association "Tadukli" Ait Aissa-Aokas
   </span>

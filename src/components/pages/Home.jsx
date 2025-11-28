@@ -34,7 +34,7 @@ const Home = () => {
 
       {/*evenements à venir */}
       {/* Bandeau d'information animé */}
-<div className="overflow-hidden mt-6">
+<div className="overflow-hidden mb-10 ">
   <p className="whitespace-nowrap text-lg font-semibold text-red-600
                 animate-marquee">
     🎭 Aucun spectacle prévu pour le moment — nous vous tiendrons informés très bientôt !

@@ -7,8 +7,13 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto text-right text-sm">
         <p>&copy; {new Date().getFullYear()} Association "Tadukli" Ait Aissa-Aokas. Tous droits réservés.</p>
         <div className="mt-2 space-x-4">
-          <a href="#" className="hover:text-blue-400">Mentions Légales</a>
-          <a href="#" className="hover:text-blue-400">Politique de Confidentialité</a>
+          <a href="/mentions-legales" className="hover:text-blue-400">
+            Mentions Légales
+          </a>
+          <a href="/politique-confidentialite" className="hover:text-blue-400">
+            Politique de Confidentialité
+          </a>
+          
         </div>
       </div>
     </footer>
