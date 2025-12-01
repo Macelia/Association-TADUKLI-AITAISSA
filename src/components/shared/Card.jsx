@@ -2,9 +2,9 @@
 
 import React from 'react';
 // IMPORTER LINK pour la navigation React Router
-import { Link } from 'react-router-dom'; 
 
-const Card = ({ title, content, imageUrl, linkTo, type }) => {
+
+const Card = ({ title, content, imageUrl, onDetails, type }) => {
   
   // Définit une couleur de fond en fonction du type d'activité pour une distinction visuelle
   const bgColor = type === 'atelier' ? 'bg-indigo-100' : 'bg-red-100';
@@ -35,13 +35,13 @@ const Card = ({ title, content, imageUrl, linkTo, type }) => {
         <p className="text-gray-600 text-sm mb-4">{content}</p>
         
         {/* Lien/Bouton d'action - Utilise <Link> pour React Router */}
-        {linkTo && (
-          <Link 
-            to={linkTo} // Utilise l'attribut 'to'
+        {onDetails && (
+          <button 
+            onClick={onDetails}
             className="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
           >
             Voir les détails
-          </Link>
+          </button>
         )}
       </div>
     </div>

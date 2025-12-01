@@ -3,10 +3,10 @@
     "id": 1,
     "type": "atelier",
     "title": "Le Coin des Lecteurs (Enfants)",
-    "description": "Séances de lecture interactive pour stimuler l'imagination des 6-10 ans (Contes et fables).",
-    "details": "Animé par Marie. Matériel fourni. Groupe limité à 12 enfants.",
-    "schedule": "Tous les mercredis, 14h00 - 15h30",
-    "fee": "10€ / séance",
+    "description": "Séances de lecture interactive pour stimuler l'imagination des enfants (Contes et fables).",
+    "details": "Animé par TADUKLI. Matériel fourni. Groupe limité à 6 enfants.",
+    "schedule": "Tous les week-ends",
+    "fee": "Abonnement mensuel (200 DA)",
     "imageUrl": "/images/atelier-lecture.jpg" 
   },
   {
@@ -16,7 +16,7 @@
     "description": "Initiation ludique aux instruments (percussions légères) et aux bases du solfège.",
     "details": "Pour les 7-12 ans. Focus sur le tambour et le xylophone.",
     "schedule": "Mardis et Vendredis soirs, 17h30 - 19h00",
-    "fee": "Abonnement mensuel (40€)",
+    "fee": "Abonnement mensuel (200 DA)",
     "imageUrl": "/images/atelier-musique.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Développement de la motricité fine et de la créativité. Techniques variées.",
     "details": "Matériel : Crayons, feutres, pastels. Thèmes changeants chaque semaine.",
     "schedule": "Samedis après-midi, 14h00 - 16h00",
-    "fee": "15€ / séance",
+    "fee": "Abonnement mensuel (200 DA)",
     "imageUrl": "/images/atelier-dessin.jpg"
   }
 ]

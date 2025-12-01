@@ -6,13 +6,13 @@ import CTA from '../shared/CTA.jsx';
 const Home = () => {
   return (
     <div className="text-center p-10 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-blue-800 mb-4
-             transition-transform duration-200 ease-out
+      <h1 className="text-5xl font-extrabold text-blue-800 mb-4
+             transition-transform duration-800 ease-out
              hover:scale-105 hover:-rotate-1">
-        Ansuf yis-wen ɣer Tdukli n AT 3issa 
+        Ansuf yis-wen  
       </h1>
-      <h2 className="mt-4 text-lg sm:text-xl font-medium text-slate-700 dark:text-slate-300">
-        Bienvenue à notre Association Culturelle !
+      <h2 className=" mt-4 text-lg sm:text-xl font-medium text-slate-700 dark:text-slate-500 mb-8">
+        ɣer Tdukli n AT 3issa 
       </h2>
       <p className="text-xl text-gray-600 mb-8">
         Promouvoir la lecture, le dessin, la musique et les jeux stratégiques pour tous.

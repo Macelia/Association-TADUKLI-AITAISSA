@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+
 // Les composants de layout sont dans 'components/layout'
 import Header from './components/layout/Header.jsx';
 import Footer from './components/layout/Footer.jsx';
@@ -15,6 +16,7 @@ import Contact from './components/pages/Contact.jsx';
 
 import MentionsLegales from "./components/pages/MentionsLegales";
 import PolitiqueConfidentialite from "./components/pages/PolitiqueConfidentialite";
+
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             {/* ⭐ Ajoute-les ici */}
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+            
+
           </Routes>
         </main>
         <Footer />
