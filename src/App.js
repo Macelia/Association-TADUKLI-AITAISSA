@@ -17,6 +17,9 @@ import Contact from './components/pages/Contact.jsx';
 import MentionsLegales from "./components/pages/MentionsLegales";
 import PolitiqueConfidentialite from "./components/pages/PolitiqueConfidentialite";
 
+import Apropos from "./components/pages/Apropos.jsx"
+import Adhesion from "./components/pages/Adhesion.jsx"
+
 
 function App() {
   return (
@@ -26,9 +29,11 @@ function App() {
         <main className="flex-grow pt-8 bg-gray-50">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/apropos" element={<Apropos />}></Route>
             <Route path="/ateliers" element={<Ateliers />} />
             <Route path="/evenements" element={<Evenements />} />
             <Route path="/soutenir" element={<Soutenir />} />
+            <Route path="/adhesion" element={<Adhesion/>}></Route>
             <Route path="/contact" element={<Contact />} />
 
             {/* ⭐ Ajoute-les ici */}
