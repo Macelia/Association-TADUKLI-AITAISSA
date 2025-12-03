@@ -20,14 +20,63 @@ const Header = () => {
 
 
         <div className="space-x-4">
-          <Link to="/apropos" className="hover:text-yellow-300">Qui sommes-nous</Link>
-          <Link to="/ateliers" className="hover:text-yellow-300">Ateliers</Link>
-          <Link to="/evenements" className="hover:text-yellow-300">Événements</Link>
-          <Link to="/galerie" className="hover:text-yellow-300">Galerie</Link>
-          <Link to="/adhesion" className="hover:text-yellow-300" >Devenir membre</Link>
-          <Link to="/soutenir" className="hover:text-yellow-300 font-semibold bg-yellow-600 px-3 py-1 rounded">Soutenir</Link>    
-          <Link to="/contact" className="hover:text-yellow-300">Contact</Link>
-        </div>
+  <Link
+    to="/apropos"
+    className="relative inline-block hover:text-yellow-300 transition-all duration-300 hover:-translate-y-1 hover:scale-105
+    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+  >
+    Qui sommes-nous
+  </Link>
+
+  <Link
+    to="/ateliers"
+    className="relative inline-block hover:text-yellow-300 transition-all duration-300 hover:-translate-y-1 hover:scale-105
+    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+  >
+    Ateliers
+  </Link>
+
+  <Link
+    to="/evenements"
+    className="relative inline-block hover:text-yellow-300 transition-all duration-300 hover:-translate-y-1 hover:scale-105
+    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+  >
+    Événements
+  </Link>
+
+  <Link
+    to="/galerie"
+    className="relative inline-block hover:text-yellow-300 transition-all duration-300 hover:-translate-y-1 hover:scale-105
+    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+  >
+    Galerie
+  </Link>
+
+  <Link
+    to="/adhesion"
+    className="relative inline-block hover:text-yellow-300 transition-all duration-300 hover:-translate-y-1 hover:scale-105
+    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+  >
+    Devenir membre
+  </Link>
+
+  <Link
+    to="/soutenir"
+    className="font-semibold bg-yellow-600 px-3 py-1 rounded text-white
+    transition-all duration-300 hover:bg-yellow-500 hover:shadow-lg hover:-translate-y-1 hover:scale-105"
+  >
+    Soutenir
+  </Link>
+
+  <Link
+    to="/contact"
+    className="relative inline-block hover:text-yellow-300 transition-all duration-300 hover:-translate-y-1 hover:scale-105
+    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+  >
+    Contact
+  </Link>
+</div>
+
       </nav>
     </header>
   );
