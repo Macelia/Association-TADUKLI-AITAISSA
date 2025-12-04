@@ -19,6 +19,7 @@ import PolitiqueConfidentialite from "./components/pages/PolitiqueConfidentialit
 
 import Apropos from "./components/pages/Apropos.jsx"
 import Adhesion from "./components/pages/Adhesion.jsx"
+import Bibliothèque from "./components/pages/Bibliothèque.jsx"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/soutenir" element={<Soutenir />} />
             <Route path="/adhesion" element={<Adhesion/>}></Route>
             <Route path="/contact" element={<Contact />} />
+            <Route path="/bibliothèque" element={<Bibliothèque/>}></Route>
 
             {/* ⭐ Ajoute-les ici */}
             <Route path="/mentions-legales" element={<MentionsLegales />} />
