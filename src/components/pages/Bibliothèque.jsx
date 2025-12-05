@@ -1,40 +1,39 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
 
 const Bibliotheque = () => {
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState({});
 
-  const handleFileUpload = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
+  useEffect(() => {
+    // Charger le fichier Excel depuis le dossier public
+    fetch("/catalogue/Catalogue_Bibliotheque_Tadukli_CLEAN.xlsx")
+      .then((res) => res.arrayBuffer())
+      .then((data) => {
+        const workbook = XLSX.read(data, { type: "array" });
 
-    const reader = new FileReader();
+        const allSheets = {};
+        workbook.SheetNames.forEach((sheetName) => {
+          const sheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+          allSheets[sheetName] = sheet;
+        });
 
-    reader.onload = (evt) => {
-      const data = new Uint8Array(evt.target.result);
-      const workbook = XLSX.read(data, { type: "array" });
-      const sheetName = workbook.SheetNames[0];
-      const sheet = workbook.Sheets[sheetName];
-      const jsonData = XLSX.utils.sheet_to_json(sheet);
-
-      setBooks(jsonData);
-    };
-
-    reader.readAsArrayBuffer(file);
-  };
+        setBooks(allSheets);
+      })
+      .catch((err) => console.error("Erreur lecture Excel :", err));
+  }, []);
 
   return (
     <div className="max-w-5xl mx-auto p-6">
 
       {/* TITLE */}
       <h1 className="text-4xl font-bold text-blue-800 mb-6">
-        📚 Bibliothèque Tadukli
+        📚 Tamkarḍit [Bibliothèque] Tadukli
       </h1>
 
       {/* INTRO */}
       <div className="bg-yellow-100 p-5 rounded-xl shadow-md border-l-4 border-yellow-600 mb-8">
         <p className="text-gray-800 text-lg leading-relaxed">
-          La bibliothèque de l’association <span className="font-semibold">Tadukli</span> 
+          La bibliothèque de l’association <span className="font-semibold">Tadukli </span> 
           est un espace culturel ouvert à tous.  
           Ici, on partage, on découvre, on apprend, on transmet.  
         </p>
@@ -68,45 +67,44 @@ const Bibliotheque = () => {
         </a>
       </div>
 
-      {/* UPLOAD EXCEL */}
-      <div className="mb-6">
-        <label className="block font-semibold text-lg mb-2">
-          🔼 Importer la liste des livres (Excel)
-        </label>
-        <input
-          type="file"
-          accept=".xlsx, .xls"
-          onChange={handleFileUpload}
-          className="block border p-2 rounded-md cursor-pointer hover:border-blue-600"
-        />
-      </div>
+      {/* TABLES POUR TOUS LES ONGLETs */}
+      {books && Object.keys(books).length > 0 ? (
+        <div className="mt-10 space-y-12">
+          {Object.keys(books).map((sheetName, index) => (
+            <div key={index}>
+              <h2 className="text-2xl font-bold text-blue-700 mb-4">
+                📖 {sheetName}
+              </h2>
 
-      {/* TABLE */}
-      {books.length > 0 && (
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse shadow-lg">
-            <thead>
-              <tr className="bg-blue-800 text-white">
-                {Object.keys(books[0]).map((header) => (
-                  <th key={header} className="p-3 border">
-                    {header}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {books.map((row, index) => (
-                <tr key={index} className="hover:bg-blue-50 transition">
-                  {Object.values(row).map((value, i) => (
-                    <td key={i} className="p-3 border">
-                      {value}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse shadow-lg">
+                  <thead>
+                    <tr className="bg-blue-800 text-white">
+                      {Object.keys(books[sheetName][0]).map((header) => (
+                        <th key={header} className="p-3 border">
+                          {header}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {books[sheetName].map((row, i) => (
+                      <tr key={i} className="hover:bg-blue-50 transition">
+                        {Object.values(row).map((value, j) => (
+                          <td key={j} className="p-3 border">
+                            {value}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
         </div>
+      ) : (
+        <p>Chargement du catalogue...</p>
       )}
     </div>
   );
